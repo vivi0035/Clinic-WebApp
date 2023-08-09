@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <title>ViViGo Clinic</title>
+            <meta charset="utf-8">
+            <link rel="stylesheet" href="adminbooking.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+
+    <body>
+
+        <!-- Navigation Bar -->
+
+        <div class="navbarContainer">
+            <div class="logo"> ViViGo</div>
+            <div class="navbarRight">
+            <div class="navbarText">
+                <a href="adminleave.html" class="navbarLink">Manage Leave</a>
+                <a href="adminbooking.html" class="navbarLink">Manage Booking</a>
+            </div>
+            <div class="navbarButtons">
+                <!-- <button> Book appointment </button> -->
+                <!-- <button class="bookbutton">
+                    Book Appointment
+                </button> -->
+                <div class="profile">
+                    <i class="fa-solid fa-user"></i>
+                    <div class="username">Admin</div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <!-- Nav Bar for Booking/Reschedule -->
+
+
+        <!-- Admin Page -->
+        <div class="adminpage">
+            <div class="container">
+                <h2>Admin Booking Management</h2><br>
+
+                <!-- Drop Down List for Doctors -->
+                <div class="topHomebar">
+                    <!-- <img class="topImage" src="images/appt.jpg" alt="tophomebar" height="600" width="400"> -->
+                    <div class="textHomebar">
+                        <h4>Doctor's List</h4>
+                        <label for="doctors" class="doc_font">Choose a doctor:</label><br>
+                            <select class="doctors" name="doctors" >
+                                <option value="" disabled selected> Select doctor </option> 
+                                <option value="kian"> Dr. Boon Kian Chua </option>
+                                <option value="crys"> Dr. Crystal Lee </option>
+                                <option value="mich"> Dr. Michelle Tan </option>
+                                <option value="dani"> Dr. Daniel Tan </option>
+                            </select>
+                        <!-- <button class="apptbutton"> Book Appointment </button>     -->
+                    </div>
+                </div>
+
+                <!-- Select Date -->
+                <div class="date" >
+                    <!-- <img class="aboutUsImage" src="images/abtus.jpg" alt="aboutus" height="600" width="400"> -->
+                    <div class="calendar">
+                        <h4>Date</h4>
+                        <form action="/action_page.php">
+                            <label for="date" ></label>
+                            <input type="date" class="cal_font" id="cal" name="cal">
+    
+                            <!-- <div class="readMore">
+                                <input type="submit">
+                            </div> -->
+
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Patient Details -->
+                <div class="patientdetails">
+                    <table class="tablepat">
+                        <tr>
+                            <th>Time</th>
+                            <th>Patient Name</th>
+                        </tr>
+                        <tr>
+                            <td><label for="8">08:00-09:00</label></td>
+                            <td>Teh Kah Shin</td>
+
+                            
+                            <div class="button">
+                                <td><a href="#!" class="bookbutton">Reschedule</a></td>
+                            </div>
+
+                            <div class="button">
+                                <td><a href="#!" class="bookbutton">Cancel</a></td>
+                            </div>
+                        </tr>
+
+
+                    </table>
+                </div>
+
+                
+            </div>
+
+
+        </div>   
+
+
+
+    </body>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <div class="footerContainer">
+            <div class="footerColumn">
+                <h4>ABOUT US</h4>
+                <p></p>
+                <a href="#!"> Our mission and values </a>
+                <a href="#!"> Our history </a>
+            </div>
+            <div class="footerColumn">
+                <h4>OUR SERVICES</h4>
+                <p></p>
+                <a href="#!"> General Consultation </a>
+                <a href="#!"> Vaccination </a>
+                <a href="#!"> Health Screening </a>
+                <a href="#!"> Chronic Illness Follow-up </a>
+            </div>
+            <div class="footerColumn">
+                <h4>OPENING HOURS</h4>
+                <p></p>
+                <p><i class="fa-solid fa-clock"></i>&ensp;Monday-Friday&emsp;08:00-20:00</p>
+                <p><i class="fa-solid fa-clock"></i>&ensp;Saturday&emsp;09:00-20:00</p>
+            </div>
+            <div class="footerColumn">
+                <h4>FIND US</h4>
+                <p></p>
+                <p>34 Toa Pah Yoh Central</p>
+                <p>#01-06/08/09</p>
+                <p>S890745</p>
+                <p></p>
+                <div class="contactLinks">
+                    <i class="fa-solid fa-phone"></i>
+                    +65 8522 8988
+                </div>
+                <div class="contactLinks">
+                <i class="fa-solid fa-envelope"></i>
+                vivigoclinic@email.com
+                </div>
+                <div class="contactLinks">
+                <a href="#!"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#!"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#!"><i class="fa-brands fa-square-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyrightContainer">
+            Copyright &copy; 2022 ViViGo Medical Group Pte Ltd. All Rights Reserved.
+        </div>
+
+    </footer>
+</html>

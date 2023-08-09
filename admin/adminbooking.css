@@ -1,0 +1,436 @@
+* {
+    font-family: 'CocoSharpS-Regular', sans-serif;
+    margin: 0px;
+}
+
+
+/* Navbar */
+
+.navbarContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    /* overflow: hidden; */
+    background-color: #FBE0DC;
+    position: fixed;
+    top:0;
+    min-width: 800px;
+    z-index: 99;
+}
+
+.navbarRight {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.navbarText {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.navbarButtons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    border: 1px solid #000;
+    padding:5px;
+}
+
+.logo {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 51px;
+}
+
+.navbarText a.navbarLink:link, a.navbarLink:visited, a.navbarLink:active {
+    text-decoration: none;
+    color: #000;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    cursor: pointer;
+}
+
+.navbarText a.navbarLink:hover {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.555);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    cursor: pointer;
+}
+
+#selected {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #747474;
+}
+
+.bookbutton {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: upperca     se;
+    cursor: pointer;
+    text-decoration: none;
+    border: 2px solid #000;
+
+}
+
+.bookbutton:hover {
+    background-color: #fff;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid #000;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+.dropdownn {
+    float: left;
+    overflow: hidden;
+  }
+
+
+.dropdownn-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    border: 2px solid #000;
+    border-radius: 16px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: -1;
+}
+
+.dropdownn-content a.dropdownnLink:link, a.dropdownnLink:visited, a.dropdownnLink:active {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+.dropdownn:hover .dropdownn-content {
+    display: block;
+  }
+
+
+
+.profile {
+    border: 2px solid #000;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #000;
+    background-color: #fff;
+}
+
+a.profile:link, a.profile:visited, a.profile:active {
+    text-decoration: none;
+    color: #000;
+    
+}
+
+a.profile:hover {
+    text-decoration: none;
+    color: #fff;
+    
+}
+
+/* Admin Booking */
+
+.adminpage {
+    background-color: #fcfcfc;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 120px;
+    min-width: 800px;
+    
+}
+
+.container {
+    background-color: #fcfcfc;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 20px;
+    min-width:800px;
+    border: 2px solid #000;
+    border-radius: 16px;
+}
+
+
+.topHomebar .doctors {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    gap: 10px;
+    margin-bottom: 50px; 
+    border: 2px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    /* font-size: 20px; */
+}
+
+/* Drop down list */
+.topHomebar {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    gap: 5px;
+    /* margin-bottom: 100px;  */
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    gap: 5px;
+    /* margin-bottom: 100px;  */
+}
+
+.dropdown {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; 
+}
+
+.dropdownbutton {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+    border: 2px solid #000;
+}
+
+/* Calendar */
+.date {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    margin-bottom: 50px;
+    
+}
+.cal_font {
+    border: 2px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    /* font-size: 20px; */
+}
+
+.readMore{
+    margin-top: 10px; 
+    font-size: 20px;
+}
+
+/* Submit */
+
+.readMore input {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.readMore input:hover , .readMore input:hover {
+    background-color: #fff;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+
+/* Patient Booking Details */
+.patientdetails {
+    display: flex;
+    flex-direction: column;
+}
+
+/* .theader {
+    width: auto;
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+} */
+
+.tablepat {
+    width: auto;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+}
+
+.tablepat tr td, .tablepat tr th {
+    padding: 10px;
+}
+
+/* Reschedule Button */
+
+
+.bookbutton {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+    border: 2px solid #000;
+
+}
+
+.bookbutton:hover {
+    background-color: #fff;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid #000;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+/* Footer */
+
+.footerContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 40px 150px 40px 150px;
+    background-color: #000;
+    color: #fff;
+}
+
+.footerColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.footerColumn p {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: #fff;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+footer a:link, a:active, a:visited {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: #fff;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 22px;
+    cursor: pointer;
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: #ffa9d0;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 22px;
+    cursor: pointer;
+}
+
+.footerColumn .contactLinks {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.copyrightContainer {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+}
+
+

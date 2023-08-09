@@ -1,0 +1,504 @@
+* {
+    font-family: 'CocoSharpS-Regular', sans-serif;
+    margin: 0px;
+}
+
+
+/* Navbar */
+
+.navbarContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    overflow: hidden;
+    background-color: #FBE0DC;
+    position: fixed;
+    top:0;
+    overflow: hidden;
+    min-width: 800px;
+}
+
+.navbarRight {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.navbarText {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.navbarButtons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    border: 1px solid #000;
+    padding:5px;
+}
+
+.logo {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 51px;
+}
+
+.navbarText a.navbarLink:link, a.navbarLink:visited, a.navbarLink:active {
+    text-decoration: none;
+    color: #000;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    cursor: pointer;
+}
+
+.navbarText a.navbarLink:hover {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.555);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    cursor: pointer;
+}
+
+#selected {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #747474;
+}
+
+.profile {
+    border: 2px solid #000;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile:hover {
+    background-color: #000;
+    color: #fff;
+    border: 2px solid #000;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Admin Booking */
+
+.adminpage {
+    background-color: #fcfcfc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 120px;
+    min-width: 800px;
+    
+}
+
+.container {
+    background-color: #fcfcfc;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 20px;
+    min-width:800px;
+    border: 2px solid #000;
+    border-radius: 16px;
+}
+
+/* Drop down list */
+.topHomebar {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    gap: 5px;
+    /* margin-bottom: 100px;  */
+}
+
+/* .topHomebar .doc_font {
+    font-size: 20px;
+} */
+
+.topHomebar .doctors {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    gap: 10px;
+    margin-bottom: 50px; 
+    border: 2px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    /* font-size: 20px; */
+}
+
+
+/* Leave date */
+
+/* .readMore{
+    margin-top: 10px; 
+    font-size: 20px;
+} */
+
+/* Submit */
+
+/* .readMore input {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+} */
+
+/* .readMore input:hover , .readMore input:hover {
+    background-color: #fff;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+} */
+
+/* calendar root element */
+#calroot {
+    /* place on top of other elements. set a higher value if nessessary */
+    /* z-index:1; */
+
+    font-family:sans-serif;
+    border: 2px solid #ccc;
+    border-width:0 1px 1px;
+    padding-top:10px;
+    height:160px;
+    width:227px;
+    display:none;
+    /* margin:0 0 0 -7px; */
+
+}
+
+/* head. contains title, prev/next month controls and possible month/year selectors */
+#calhead {
+    padding:2px 0;
+    height:22px;
+}
+
+#caltitle {
+    font-size:14px;
+    color:#0150D1;
+    float:left;
+    text-align:center;
+    width:160px;
+    line-height:20px;
+    text-shadow:0 1px 0 #ddd;
+}
+
+#calnext, #calprev {
+    display:block;
+    width:20px;
+    height:20px;
+    float:left;
+    cursor:pointer;
+    margin-left:9px;
+}
+
+#calnext {
+    float:right;
+    margin-right:9px;
+}
+
+#calprev.caldisabled, #calnext.caldisabled {
+    visibility:hidden;
+}
+
+/* year/month selector */
+#caltitle select {
+    font-size:10px;
+}
+
+/* names of the days */
+#caldays {
+    height:14px;
+    border-bottom:1px solid #ddd;
+}
+
+#caldays span {
+    display:block;
+    float:left;
+    width:32px;
+    text-align:center;
+    font-size:11px;
+}
+
+/* container for weeks */
+#calweeks {
+    /* background-color:#fff; */
+    margin-top:4px;
+}
+
+/* single week */
+.calweek {
+    clear:left;
+    height:22px;
+}
+
+/* single day */
+.calweek a {
+    display:block;
+    float:left;
+    width:31px;
+    height:20px;
+    text-decoration:none;
+    font-size:11px;
+    margin-left:1px;
+    text-align:center;
+    line-height:20px;
+    color:#666;
+
+}
+
+/* different states */
+.calweek a:hover, .calfocus {
+    background-color:#ddd;
+}
+
+/* sunday */
+a.calsun {
+    color:red;
+}
+
+/* offmonth day */
+a.caloff {
+    color:#ccc;
+}
+
+a.caloff:hover {
+    background-color:rgb(245, 245, 250);
+}
+
+
+/* unselecteble day */
+a.caldisabled {
+    background-color:#efefef !important;
+    color:#ccc	!important;
+    cursor:default;
+}
+
+
+/* current date */
+#calcurrent {
+    background-color:#498CE2;
+    color:#fff;
+}
+
+/* today */
+#caltoday {
+    background-color:#999;
+    color:#fff;
+}
+
+
+
+
+/* Back button */
+.backpos {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.back{
+    margin-top: 10px; 
+    font-size: 20px;
+}
+
+.back input {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.back input:hover , .back input:hover {
+    background-color: #fff;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+
+/* Patient Booking Details */
+.patientdetails {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.tablepat {
+    width: 600px;
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+}
+
+/* Reschedule Button */
+
+/* tr .button {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    justify-content: flex-end;
+} */
+
+.bookbutton {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+    border: 2px solid #000;
+
+}
+
+.bookbutton:hover {
+    background-color: #fff;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid #000;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+/* Footer */
+
+.footerContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 40px 150px 40px 150px;
+    background-color: #000;
+    color: #fff;
+}
+
+.footerColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.footerColumn p {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: #fff;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+footer a:link, a:active, a:visited {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: #fff;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 22px;
+    cursor: pointer;
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: #ffa9d0;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 22px;
+    cursor: pointer;
+}
+
+.footerColumn .contactLinks {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.copyrightContainer {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+}
+
+

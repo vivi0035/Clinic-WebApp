@@ -1,0 +1,17 @@
+create database called 'vivigo'
+
+create table called 'users'
+
+add the following to the 'users' table
+username varchar(100) PRIMARY KEY
+email varchar(100)
+mobile varchar(100)
+password varchar(40)
+
+Flow:
+1. signupPatient.html
+2. signup.php
+3. loginPatient.php
+4. bookingPatient.php (username should be displayed inside the navigation bar) [currently booking page cannot do anything yet]
+5. can logout from the session from the username button inside the navigation bar
+6. you should end up back in the login page
